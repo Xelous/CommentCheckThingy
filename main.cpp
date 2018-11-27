@@ -14,6 +14,10 @@ class Q
 			std::cout << "Default constructor" << std::endl;
 		}
 
+		//Q(const Q&) = delete;		This would stop the copy
+		// Or using something like boosts' noncopyable:
+		// https://www.boost.org/doc/libs/1_68_0/libs/core/doc/html/core/noncopyable.html
+
 		Q(const int& p_Value)
 			:
 			value(p_Value)
